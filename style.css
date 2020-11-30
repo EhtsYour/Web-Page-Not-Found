@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*==================== 404 Page Not Found CSS Start ====================*/
+
+.page-404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: linear-gradient(135deg, #12cbc4, #12cbc4 50%, #333 50%, #333);
+}
+
+.page-404 .box-404 {
+  position: relative;
+}
+
+.page-404 .box-404 h2 {
+  color: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15em;
+  text-shadow: -25px 25px 40px rgba(0, 0, 0, 0.5),
+               -10px 10px 0 rgba(255, 255, 255, 0.5),
+               -20px 20px 0 rgba(255, 255, 255, 0.2),
+               -30px 30px 0 rgba(255, 255, 255, 0.05);
+}
+
+.page-404 .box-404 h2 .zero-404 {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 0 15px;
+  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#777));
+  background-image: linear-gradient(to bottom, #fff, #777);
+  -webkit-box-shadow: -25px 25px 40px rgba(0, 0, 0, 0.5);
+          box-shadow: -25px 25px 40px rgba(0, 0, 0, 0.5);
+}
+
+.page-404 .box-404 h2 .zero-404::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#777));
+  background-image: linear-gradient(to top, #fff, #777);
+}
+
+.page-404 .box-404 h2 .zero-404::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: repeating-linear-gradient(45deg, #12cbc4 0%, #12cbc4 50%, #333 50%, #333 100%),
+                    repeating-linear-gradient(135deg, #12cbc4 0%, #12cbc4 50%, #333 50%, #333 100%);
+  background-blend-mode: difference;
+  -webkit-box-shadow: inset 0 0 30px black;
+          box-shadow: inset 0 0 30px black;
+  -webkit-animation: zero-404 8s steps(8) infinite;
+          animation: zero-404 8s steps(8) infinite;
+}
+
+@-webkit-keyframes zero-404 {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes zero-404 {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/*==================== 404 Page Not Found CSS End ====================*/
